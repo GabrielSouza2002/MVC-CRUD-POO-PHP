@@ -14,6 +14,8 @@ class clientsController{
     function getALL()
     {
         $resultData = $this->model->getALL();
+        //print_r($resultData);
+        require_once('/views/index.php');
     }
 
 }
