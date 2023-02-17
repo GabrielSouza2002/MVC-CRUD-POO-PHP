@@ -7,7 +7,7 @@ class clientsController{
 
     function __construct()
     {
-        $this->model = new ClientModel;
+        $this->model = new ClientModel();
 
     }
 
@@ -15,7 +15,7 @@ class clientsController{
     {
         $resultData = $this->model->getALL();
         //print_r($resultData);
-        require_once('/views/index.php');
+        require_once('./views/index.php');
     }
 
 }
